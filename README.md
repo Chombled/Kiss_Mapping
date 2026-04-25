@@ -1,5 +1,5 @@
-# Kiss Mapping
-Repository for the mapping stack using custom extensions of kiss-slam and kiss-icp as well as associated scripts and configs 
+# Kiss_Mapping
+Repository for a mapping stack using custom extensions of kiss-slam and kiss-icp as well as associated scripts and configs
 
 # Setup
 Create a `uv` virtual environment first, then use `./setup_venv.sh` from the workspace root to install the local `kiss-icp` and `kiss-slam` checkouts into that active environment.
