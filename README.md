@@ -10,6 +10,8 @@ The setup script recreates generated install/build state on each run:
 - `kiss-icp/python/build`
 - `kiss-slam/build`
 
+Python sources are installed editable. Native C++ extensions are built during setup; rerun `./setup_venv.sh` after changing native code or build settings.
+
 The bootstrap also replaces the published `map_closures==2.0.2` wheel with a pinned upstream Git commit. This is intentional: `--refuse-scans` needs `MapClosures.get_ground_alignment_from_id`, and the published `2.0.2` wheel plus the upstream `v2.0.2` tag both predate that API.
 
 ```sh

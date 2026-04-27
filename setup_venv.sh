@@ -125,6 +125,8 @@ install_kiss_icp() {
     echo "Installing local kiss-icp with vendored native dependencies"
     "${UV_BIN}" pip install --python "${VENV_PYTHON}" \
         --no-build-isolation \
+        -Ceditable.rebuild=false \
+        -Ceditable.verbose=false \
         -Ccmake.define.USE_SYSTEM_EIGEN3=OFF \
         -Ccmake.define.USE_SYSTEM_SOPHUS=OFF \
         -Ccmake.define.USE_SYSTEM_TBB=OFF \
@@ -143,6 +145,8 @@ install_kiss_slam() {
     echo "Installing local kiss-slam with vendored native dependencies"
     "${UV_BIN}" pip install --python "${VENV_PYTHON}" \
         --no-build-isolation \
+        -Ceditable.rebuild=false \
+        -Ceditable.verbose=false \
         -Ccmake.define.USE_SYSTEM_EIGEN3=OFF \
         -Ccmake.define.USE_SYSTEM_G2O=OFF \
         -Ccmake.define.USE_SYSTEM_TSL-ROBIN-MAP=OFF \
